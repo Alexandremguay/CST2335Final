@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">D.D.A.</string>
+    <string name="dialog_message">¿Seguro que quieres eliminar este elemento?</string>
+    <string name="dialog_title">Mi aplicación</string>
+    <string name="ok">Si</string>
+    <string name="cancel">Cancelar</string>
+    <string name="help">Ayuda</string>
+    <string name="pricepaid">Precio de Gasolina</string>
+    <string name="recorder">Grabadora</string>
+    <string name="homework">Deberes</string>
+    <string name="gastracker">Gasolina</string>
+    <string name="addprice">Añadir precio</string>
+    <string name="delete">Suprimir</string>
+    <string name="helpMenu">
+        Daniel Aramouni : Version 5.1
+        \n
+        Esta aplicación implica una funcionalidad simple pero útil.
+        Simplemente ingrese el monto que paga por el gas cada vez que llena su automóvil,
+        lo que le permite hacer un seguimiento de cuánto ha gastado.
+        Si accidentalmente ingresa datos incorrectos, simplemente presione el botón Eliminar para eliminar la última entrada.
+    </string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B7950B</color>
+    <color name="colorPrimaryDark">#7E5109</color>
+    <color name="colorAccent">#839192</color>
+    <drawable name="highlight">#7FB3D5</drawable>
+    <drawable name="highlight1">#7FB3D5</drawable>
+
+    <color name="primary">#B7950B</color>
+    <color name="primary_dark">#7E5109</color>
+    <color name="primary_light">#FFCDD2</color>
+    <color name="primary_text">#839192</color>
+    <color name="accent">#40ffa9</color>
+    <color name="secondary_text">#727272</color>
+    <color name="divider">#FFFFFF</color>
+    <color name="text">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="tab_strip">#8129b4</color>
+
+</resources>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context="com.example.alexandremguay.DDAfinalproject.HomeworkTracker">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/maintoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7DC6F"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+        <!-- https://stackoverflow.com/questions/20000560/android-layout-width-half-of-parent -->
+
+        <TextView
+            android:id="@+id/todayDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="56dip"
+            android:background="#F7DC6F"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AEB6BF"
+            android:text="@string/progress"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="11pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="12">
+
+            <TextView
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F7DC6F"
+                android:text="@string/start"
+                android:textColor="#CB4335"
+                android:textSize="7pt"
+                android:textAlignment="textStart"/>
+
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F7DC6F"
+                android:max="105"
+                android:minHeight="30dip"
+                android:progressBackgroundTint="#212F3C"
+                android:progressTint="#85929E"
+                android:layout_weight="10" />
+
+            <TextView
+                android:id="@+id/end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F7DC6F"
+                android:layout_weight="1"
+                android:text="@string/end"
+                android:textColor="#CB4335"
+                android:textSize="7pt"
+                android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+
+
+        <!--https://stackoverflow.com/questions/2020882/how-to-change-progress-bars-progress-color-in-android-->
+
+        <TextView
+            android:id="@+id/todoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AEB6BF"
+            android:text="@string/complete"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="11pt" />
+
+        <ListView
+            android:id="@+id/list_tasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#212F3C"
+            android:smoothScrollbar="true"
+            android:choiceMode="singleChoice"
+            android:textSize="12pt"
+
+            />
+
+        <EditText
+            android:id="@+id/addtext"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/border"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="3"
+            android:scrollHorizontally="false"
+            android:text="@string/hint1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="9pt"/>
+            <!--android:background="?android:attr/activatedBackgroundIndicator"-->
+
+        <!--https://stackoverflow.com/questions/3276380/android-word-wrap-edittext-text-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/my_button"
+                android:text="@string/add"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/my_button"
+                android:text="@string/delete"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_gravity="bottom|center"
+            app:backgroundTint="#E5E8E8"
+            app:layout_anchorGravity="bottom|center" />
+
+
+    </FrameLayout>
+
+
+    <!--https://stackoverflow.com/questions/33671196/floatingactionbutton-with-text-instead-of-image-->
+
+
+</RelativeLayout>
+
+    <!--<ListView--><!--android:id="@+id/list_weekdays"--><!--android:layout_width="0dp"--><!--android:layout_height="match_parent"--><!--android:layout_weight="1"--><!--android:background="@drawable/border" />-->
+
+    <!--<LinearLayout--><!--android:id="@+id/list_weekdays"--><!--android:layout_width="0dp"--><!--android:layout_height="match_parent"--><!--android:layout_weight="1"--><!--android:background="@drawable/border"--><!--android:orientation="vertical">-->
+
+    <!--<Button--><!--android:id="@+id/monday"--><!--android:layout_width="wrap_content"--><!--android:layout_height="40dip"--><!--android:text = "Monday"--><!--/>-->
+
+    <!--<Button--><!--android:id="@+id/tuesday"--><!--android:layout_width="wrap_content"--><!--android:layout_height="40dip"--><!--android:text = "Tuesday"-->
+
+    <!--/>-->
+
+    <!--<Button--><!--android:id="@+id/wednesday"--><!--android:layout_width="wrap_content"--><!--android:layout_height="40dip"--><!--android:text = "Wednesday"--><!--/>-->
+
+    <!--<Button--><!--android:id="@+id/thursday"--><!--android:layout_width="wrap_content"--><!--android:layout_height="40dip"--><!--android:text = "Thursday"-->
+
+    <!--/>-->
+
+    <!--<Button--><!--android:id="@+id/friday"--><!--android:layout_width="wrap_content"--><!--android:layout_height="40dip"--><!--android:text = "Friday"-->
+
+    <!--/>-->
+
+    <!--<Button--><!--android:id="@+id/saturday"--><!--android:layout_width="wrap_content"--><!--android:layout_height="40dip"--><!--android:text = "Saturday"-->
+
+    <!--/>-->
+
+    <!--<Button--><!--android:id="@+id/sunday"--><!--android:layout_width="wrap_content"--><!--android:layout_height="40dip"--><!--android:text = "Sunday"--><!--/>-->
+
+    <!--</LinearLayout>-->

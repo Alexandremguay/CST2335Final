@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">D.D.A.</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="recorder">Enregistreur</string>
+    <string name="homework">Devoirs</string>
+    <string name="gastracker">Gasoline</string>
+    <string name="title_activity_main">Devoirs</string>
+    <string name="title">A propos</string>
+    <string name="close">Fermer</string>
+    <string name="about">Auteur: Alexandre Guay
+    \nVersion: 1.0
+    \nDetails: Cette application donne la date, le progrès dans la semaine, et permet d\'ajouter ou
+        d\'enlever des tâches à une liste de devoirs.
+
+    </string>
+
+    <string name="pricepaid">Prix payé</string>
+    <string name="addprice">Ajouter le prix</string>
+
+    <string name="dialog_message">Voulez-vous supprimer ce fichier? </string>
+    <string name="dialog_title">Mon Application</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Canceller</string>
+    <string name="help">Aide</string>
+    <string name="helpMenu">
+        Daniel Aramouni : Version 5.1
+        \n
+        Cette application est simple mais utile.
+        Elle permet de tenir compte du montant de gasoline utilisé, en ajoutant un prix à chaque fois que l\'utilisateur
+        rempli sa voiture.
+       Les données peuvent être éffacées si necéssaire.
+
+    </string>
+
+    <string name="complete">A compléter: </string>
+    <string name="add">Ajouter</string>
+    <string name="delete">Supprimer</string>
+    <string name="progress">Progrès Hebdomadaire:</string>
+    <string name="hint1">Taper les nouvelles tâches ici...</string>
+    <string name="fab">ENCOURAGEMENT</string>
+    <string name="back">Retour</string>
+    <string name="quit">Quitter</string>
+    <string name="aboutmenu">A propos</string>
+    <string name="start">Début</string>
+    <string name="end">Fi</string>
+
+    <string name="memoRecorder">Enregistreur</string>
+    <string name="tab_title_record">Enregistrer</string>
+    <string name="tab_title_saved_recordings">Sauvegardes</string>
+    <string name="toast_recording_start">Enregistrement débuté</string>
+    <string name="toast_recording_finish">Enregistrement sauvegardé à:</string>
+    <string name="toast_file_delete">%1$s supprimé avec succès</string>
+    <string name="toast_file_exists">Le fichier %1$s éxiste déjà. SVP choisir un autre now.</string>
+    <string name="notification_recording">Enregistrement...</string>
+    <string name="dialog_title_delete">Confirmer la supprimation...</string>
+    <string name="dialog_text_delete">Voulez-vous supprimer ce fichier?</string>
+    <string name="dialog_title_share">Partager le fichier</string>
+    <string name="dialog_title_name">Nommer le fichier</string>
+    <string name="dialog_title_options">Options</string>
+    <string name="version">Version</string>
+    <string name="dialog_file_share">Partager le fichier</string>
+    <string name="dialog_file_rename">Renommer le fichier</string>
+    <string name="dialog_file_delete">Supprimer le fichier</string>
+    <string name="dialog_action_cancel">Canceller</string>
+    <string name="dialog_action_ok">OK</string>
+    <string name="dialog_action_yes">Oui</string>
+    <string name="dialog_action_no">Non</string>
+    <string name="no_saved_recordings_message">Aucun enregistrement</string>
+    <string name="default_file_name">Mon enregistrement</string>
+    <string name="record_prompt">Appuyer le bouton pour enregistrer</string>
+    <string name="record_in_progress">Enregistrement</string>
+    <string name="send_to">Envoyer à</string>
+</resources>

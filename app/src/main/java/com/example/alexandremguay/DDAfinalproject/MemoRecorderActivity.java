@@ -16,7 +16,12 @@ import com.example.alexandremguay.DDAfinalproject.fragements.RecordFragment;
 
 /**
  * Created by fergu on 2017-12-3.
+ *
+ * REFERENCES:
+ * https://github.com/dkim0419/SoundRecorder
+ * https://github.com/codepath/android-audio-video-demo
  */
+
 
 public class MemoRecorderActivity extends AppCompatActivity {
 
